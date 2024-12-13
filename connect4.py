@@ -1,13 +1,17 @@
 #intro and instructions
 win = False
 lastinput = ""
-c1 = ["□","□","□","□","□","□", 0]
-c2 = ["□","□","□","□","□","□", 0]
-c3 = ["□","□","□","□","□","□", 0]
-c4 = ["□","□","□","□","□","□", 0]
-c5 = ["□","□","□","□","□","□", 0]
-c6 = ["□","□","□","□","□","□", 0]
-c7 = ["□","□","□","□","□","□", 0]
+balls = True
+def clearboard():
+    global c1, c2, c3, c4, c5, c6, c7
+    c1 = ["☐","☐","☐","☐","☐","☐", 0]
+    c2 = ["☐","☐","☐","☐","☐","☐", 0]
+    c3 = ["☐","☐","☐","☐","☐","☐", 0]
+    c4 = ["☐","☐","☐","☐","☐","☐", 0]
+    c5 = ["☐","☐","☐","☐","☐","☐", 0]
+    c6 = ["☐","☐","☐","☐","☐","☐", 0]
+    c7 = ["☐","☐","☐","☐","☐","☐", 0]
+clearboard()
 xhas = []
 ohas = []
 def checkwinstates():
@@ -15,119 +19,119 @@ def checkwinstates():
     # VERTICAL WIN STATE CHECK
     if lastinput == "p1input":
         if p1input == "1":
-            if c1[c1[6]-2] == "X" and c1[c1[6]-3] == "X" and c1[c1[6]-4] == "X":
+            if c1[c1[6]-2] == "▩" and c1[c1[6]-3] == "▩" and c1[c1[6]-4] == "▩":
                 print("Player 1 Wins!")
                 win = True
         if p1input == "2":
-            if c2[c2[6]-2] == "X" and c2[c2[6]-3] == "X" and c2[c2[6]-4] == "X":
+            if c2[c2[6]-2] == "▩" and c2[c2[6]-3] == "▩" and c2[c2[6]-4] == "▩":
                 print("Player 1 Wins!")
                 win = True
         if p1input == "3":
-            if c3[c3[6]-2] == "X" and c3[c3[6]-3] == "X" and c3[c3[6]-4] == "X":
+            if c3[c3[6]-2] == "▩" and c3[c3[6]-3] == "▩" and c3[c3[6]-4] == "▩":
                 print("Player 1 Wins!")
                 win = True
         if p1input == "4":
-            if c4[c4[6]-2] == "X" and c4[c4[6]-3] == "X" and c4[c4[6]-4] == "X":
+            if c4[c4[6]-2] == "▩" and c4[c4[6]-3] == "▩" and c4[c4[6]-4] == "▩":
                 print("Player 1 Wins!")
                 win = True
         if p1input == "5":
-            if c5[c5[6]-2] == "X" and c5[c5[6]-3] == "X" and c5[c5[6]-4] == "X":
+            if c5[c5[6]-2] == "▩" and c5[c5[6]-3] == "▩" and c5[c5[6]-4] == "▩":
                 print("Player 1 Wins!")
                 win = True
         if p1input == "6":
-            if c6[c6[6]-2] == "X" and c6[c6[6]-3] == "X" and c6[c6[6]-4] == "X":
+            if c6[c6[6]-2] == "▩" and c6[c6[6]-3] == "▩" and c6[c6[6]-4] == "▩":
                 print("Player 1 Wins!")
                 win = True
         if p1input == "1":
-            if c7[c7[6]-2] == "X" and c7[c7[6]-3] == "X" and c7[c7[6]-4] == "X":
+            if c7[c7[6]-2] == "▩" and c7[c7[6]-3] == "▩" and c7[c7[6]-4] == "▩":
                 print("Player 1 Wins!")
                 win = True
     if "p2input" in globals() and lastinput == "p2input":
         if p2input == "1":
-           if c1[c1[6]-2] == "O" and c1[c1[6]-3] == "O" and c1[c1[6]-4] == "O":
+           if c1[c1[6]-2] == "☀" and c1[c1[6]-3] == "☀" and c1[c1[6]-4] == "☀":
                print("Player 2 Wins!")
                win = True
         if p2input == "2":
-           if c2[c2[6]-2] == "O" and c2[c2[6]-3] == "O" and c2[c2[6]-4] == "O":
+           if c2[c2[6]-2] == "☀" and c2[c2[6]-3] == "☀" and c2[c2[6]-4] == "☀":
                print("Player 2 Wins!")
                win = True
         if p2input == "3":
-           if c3[c3[6]-2] == "O" and c3[c3[6]-3] == "O" and c3[c3[6]-4] == "O":
+           if c3[c3[6]-2] == "☀" and c3[c3[6]-3] == "☀" and c3[c3[6]-4] == "☀":
                print("Player 2 Wins!")
                win = True
         if p2input == "4":
-           if c4[c4[6]-2] == "O" and c4[c4[6]-3] == "O" and c4[c4[6]-4] == "O":
+           if c4[c4[6]-2] == "☀" and c4[c4[6]-3] == "☀" and c4[c4[6]-4] == "☀":
                print("Player 2 Wins!")
                win = True
         if p2input == "5":
-           if c5[c5[6]-2] == "O" and c5[c5[6]-3] == "O" and c5[c5[6]-4] == "O":
+           if c5[c5[6]-2] == "☀" and c5[c5[6]-3] == "☀" and c5[c5[6]-4] == "☀":
                print("Player 2 Wins!")
                win = True
         if p2input == "6":
-           if c6[c6[6]-2] == "O" and c6[c6[6]-3] == "O" and c6[c6[6]-4] == "O":
+           if c6[c6[6]-2] == "☀" and c6[c6[6]-3] == "☀" and c6[c6[6]-4] == "☀":
                print("Player 2 Wins!")
                win = True
         if p2input == "1":
-           if c7[c7[6]-2] == "O" and c7[c7[6]-3] == "O" and c7[c7[6]-4] == "O":
+           if c7[c7[6]-2] == "☀" and c7[c7[6]-3] == "☀" and c7[c7[6]-4] == "☀":
                print("Player 2 Wins!")
                win = True
     # HORIZONTAL WIN STATE CHECK
     if lastinput == "p1input":
         if p1input == "1":
-            if c2[c1[6]-1] == "X" and c3[c1[6]-1] == "X" and c4[c1[6]-1] == "X":
+            if c2[c1[6]-1] == "▩" and c3[c1[6]-1] == "▩" and c4[c1[6]-1] == "▩":
                 print("Player 1 Wins!")
                 win = True
         if p1input == "2":
-            if (c1[c2[6]-1] == "X" and c3[c2[6]-1] == "X" and c4[c2[6]-1] == "X") or (c3[c2[6]-1] == "X" and c4[c2[6]-1] == "X" and c5[c2[6]-1] == "X"):
+            if (c1[c2[6]-1] == "▩" and c3[c2[6]-1] == "▩" and c4[c2[6]-1] == "▩") or (c3[c2[6]-1] == "▩" and c4[c2[6]-1] == "▩" and c5[c2[6]-1] == "▩"):
                 print("Player 1 Wins!")
                 win = True
         if p1input == "3":
-            if (c1[c3[6]-1] == "X" and c2[c3[6]-1] == "X" and c4[c3[6]-1] == "X") or (c2[c3[6]-1] == "X" and c4[c3[6]-1] == "X" and c5[c3[6]-1] == "X") or (c4[c3[6]-1] == "X" and c5[c3[6]-1] == "X" and c6[c3[6]-1] == "X"):
+            if (c1[c3[6]-1] == "▩" and c2[c3[6]-1] == "▩" and c4[c3[6]-1] == "▩") or (c2[c3[6]-1] == "▩" and c4[c3[6]-1] == "▩" and c5[c3[6]-1] == "▩") or (c4[c3[6]-1] == "▩" and c5[c3[6]-1] == "▩" and c6[c3[6]-1] == "▩"):
                 print("Player 1 Wins!")
                 win = True
         if p1input == "4":
-            if (c1[c4[6]-1] == "X" and c2[c4[6]-1] == "X" and c3[c4[6]-1] == "X") or (c2[c4[6]-1] == "X" and c3[c4[6]-1] == "X" and c5[c4[6]-1] == "X") or (c3[c4[6]-1] == "X" and c5[c4[6]-1] == "X" and c6[c4[6]-1] == "X") or (c5[c4[6]-1] == "X" and c6[c4[6]-1] == "X" and c7[c4[6]-1] == "X"):
+            if (c1[c4[6]-1] == "▩" and c2[c4[6]-1] == "▩" and c3[c4[6]-1] == "▩") or (c2[c4[6]-1] == "▩" and c3[c4[6]-1] == "▩" and c5[c4[6]-1] == "▩") or (c3[c4[6]-1] == "▩" and c5[c4[6]-1] == "▩" and c6[c4[6]-1] == "▩") or (c5[c4[6]-1] == "▩" and c6[c4[6]-1] == "▩" and c7[c4[6]-1] == "▩"):
                 print("Player 1 Wins!")
                 win = True
         if p1input == "5":
-            if (c2[c5[6]-1] == "X" and c3[c5[6]-1] == "X" and c4[c5[6]-1] == "X") or (c3[c5[6]-1] == "X" and c4[c5[6]-1] == "X" and c6[c5[6]-1] == "X") or (c4[c5[6]-1] == "X" and c6[c5[6]-1] == "X" and c7[c5[6]-1] == "X"):
+            if (c2[c5[6]-1] == "▩" and c3[c5[6]-1] == "▩" and c4[c5[6]-1] == "▩") or (c3[c5[6]-1] == "▩" and c4[c5[6]-1] == "▩" and c6[c5[6]-1] == "▩") or (c4[c5[6]-1] == "▩" and c6[c5[6]-1] == "▩" and c7[c5[6]-1] == "▩"):
                 print("Player 1 Wins!")
                 win = True
         if p1input == "6":
-            if (c3[c6[6]-1] == "X" and c4[c6[6]-1] == "X" and c5[c6[6]-1] == "X") or (c4[c6[6]-1] == "X" and c5[c6[6]-1] == "X" and c7[c6[6]-1] == "X"):
+            if (c3[c6[6]-1] == "▩" and c4[c6[6]-1] == "▩" and c5[c6[6]-1] == "▩") or (c4[c6[6]-1] == "▩" and c5[c6[6]-1] == "▩" and c7[c6[6]-1] == "▩"):
                 print("Player 1 Wins!")
                 win = True
         if p1input == "7":
-            if (c4[c7[6]-1] == "X" and c5[c7[6]-1] == "X" and c6[c7[6]-1] == "X"):
+            if (c4[c7[6]-1] == "▩" and c5[c7[6]-1] == "▩" and c6[c7[6]-1] == "▩"):
                 print("Player 1 Wins!")
                 win = True
     if "p2input" in globals() and lastinput == "p2input":
         if p2input == "1":
-            if c2[c1[6]-1] == "O" and c3[c1[6]-1] == "O" and c4[c1[6]-1] == "O":
+            if c2[c1[6]-1] == "☀" and c3[c1[6]-1] == "☀" and c4[c1[6]-1] == "☀":
                 print("Player 2 Wins!")
                 win = True
         if p2input == "2":
-            if (c1[c2[6]-1] == "O" and c3[c2[6]-1] == "O" and c4[c2[6]-1] == "O") or (c3[c2[6]-1] == "O" and c4[c2[6]-1] == "O" and c5[c2[6]-1] == "O"):
+            if (c1[c2[6]-1] == "☀" and c3[c2[6]-1] == "☀" and c4[c2[6]-1] == "☀") or (c3[c2[6]-1] == "☀" and c4[c2[6]-1] == "☀" and c5[c2[6]-1] == "☀"):
                 print("Player 2 Wins!")
                 win = True
         if p2input == "3":
-            if (c1[c3[6]-1] == "O" and c2[c3[6]-1] == "O" and c4[c3[6]-1] == "O") or (c2[c3[6]-1] == "O" and c4[c3[6]-1] == "O" and c5[c3[6]-1] == "O") or (c4[c3[6]-1] == "O" and c5[c3[6]-1] == "O" and c6[c3[6]-1] == "O"):
+            if (c1[c3[6]-1] == "☀" and c2[c3[6]-1] == "☀" and c4[c3[6]-1] == "☀") or (c2[c3[6]-1] == "☀" and c4[c3[6]-1] == "☀" and c5[c3[6]-1] == "☀") or (c4[c3[6]-1] == "☀" and c5[c3[6]-1] == "☀" and c6[c3[6]-1] == "☀"):
                 print("Player 2 Wins!")
                 win = True
         if p2input == "4":
-            if (c1[c4[6]-1] == "O" and c2[c4[6]-1] == "O" and c3[c4[6]-1] == "O") or (c2[c4[6]-1] == "O" and c3[c4[6]-1] == "O" and c5[c4[6]-1] == "O") or (c3[c4[6]-1] == "O" and c5[c4[6]-1] == "O" and c6[c4[6]-1] == "O") or (c5[c4[6]-1] == "O" and c6[c4[6]-1] == "O" and c7[c4[6]-1] == "O"):
+            if (c1[c4[6]-1] == "☀" and c2[c4[6]-1] == "☀" and c3[c4[6]-1] == "☀") or (c2[c4[6]-1] == "☀" and c3[c4[6]-1] == "☀" and c5[c4[6]-1] == "☀") or (c3[c4[6]-1] == "☀" and c5[c4[6]-1] == "☀" and c6[c4[6]-1] == "☀") or (c5[c4[6]-1] == "☀" and c6[c4[6]-1] == "☀" and c7[c4[6]-1] == "☀"):
                 print("Player 2 Wins!")
                 win = True
         if p2input == "5":
-            if (c2[c5[6]-1] == "O" and c3[c5[6]-1] == "O" and c4[c5[6]-1] == "O") or (c3[c5[6]-1] == "O" and c4[c5[6]-1] == "O" and c6[c5[6]-1] == "O") or (c4[c5[6]-1] == "O" and c6[c5[6]-1] == "O" and c7[c5[6]-1] == "O"):
+            if (c2[c5[6]-1] == "☀" and c3[c5[6]-1] == "☀" and c4[c5[6]-1] == "☀") or (c3[c5[6]-1] == "☀" and c4[c5[6]-1] == "☀" and c6[c5[6]-1] == "☀") or (c4[c5[6]-1] == "☀" and c6[c5[6]-1] == "☀" and c7[c5[6]-1] == "☀"):
                 print("Player 2 Wins!")
                 win = True
         if p2input == "6":
-            if (c3[c6[6]-1] == "O" and c4[c6[6]-1] == "O" and c5[c6[6]-1] == "O") or (c4[c6[6]-1] == "O" and c5[c6[6]-1] == "O" and c7[c6[6]-1] == "O"):
+            if (c3[c6[6]-1] == "☀" and c4[c6[6]-1] == "☀" and c5[c6[6]-1] == "☀") or (c4[c6[6]-1] == "☀" and c5[c6[6]-1] == "☀" and c7[c6[6]-1] == "☀"):
                 print("Player 2 Wins!")
                 win = True
         if p2input == "7":
-            if (c4[c7[6]-1] == "O" and c5[c7[6]-1] == "O" and c6[c7[6]-1] == "O"):
+            if (c4[c7[6]-1] == "☀" and c5[c7[6]-1] == "☀" and c6[c7[6]-1] == "☀"):
                 print("Player 2 Wins!")
                 win = True
     #diagonal win state check
@@ -157,76 +161,138 @@ def printboard():
     print("1 2 3 4 5 6 7")
     print("-------------")
 printboard()
-while win != True:
-    p1input = input("(X) Player 1: ")
+while balls == True:
+    if win == True:
+        replayreq = input("Play again? ").lower()
+        while replayreq != "no" and replayreq != "n" and replayreq != "yes" and replayreq != "y" and win == True:
+            replayreq = input("Play again? (yes or no): ").lower()
+        if replayreq == "yes" or replayreq == "y":
+            clearboard()
+            printboard()
+            xhas.clear()
+            ohas.clear()
+            win = False
+        elif replayreq == "no" or replayreq == "n":
+            print("GG")
+            break
+    p1input = input("(▩) Player 1: ")
     lastinput = "p1input"
     if p1input == "1":
-        c1[c1[6]] = "X"
-        c1[6] += 1
-        xhas.append(f"1{c1[6]}")
+        if c1[6] == 6:
+            print("-------------\nThat row is full!")
+        else:
+            c1[c1[6]] = "▩"
+            c1[6] += 1
+            xhas.append(f"1{c1[6]}")
     elif p1input == "2":
-        c2[c2[6]] = "X"
-        c2[6] += 1
-        xhas.append(f"2{c2[6]}")
+        if c2[6] == 6:
+            print("-------------\nThat row is full!")
+        else:
+            c2[c2[6]] = "▩"
+            c2[6] += 1
+            xhas.append(f"2{c2[6]}")
     elif p1input== "3":
-        c3[c3[6]] = "X"
-        c3[6] += 1
-        xhas.append(f"3{c3[6]}")
+        if c3[6] == 6:
+            print("-------------\nThat row is full!")
+        else:
+            c3[c3[6]] = "▩"
+            c3[6] += 1
+            xhas.append(f"3{c3[6]}")
     elif p1input == "4":
-        c4[c4[6]] = "X"
-        c4[6] += 1
-        xhas.append(f"4{c4[6]}")
+        if c4[6] == 6:
+            print("-------------\nThat row is full!")
+        else:
+            c4[c4[6]] = "▩"
+            c4[6] += 1
+            xhas.append(f"4{c4[6]}")
     elif p1input == "5":
-        c5[c5[6]] = "X"
-        c5[6] += 1
-        xhas.append(f"5{c5[6]}")
+        if c5[6] == 6:
+            print("-------------\nThat row is full!")
+        else:
+            c5[c5[6]] = "▩"
+            c5[6] += 1
+            xhas.append(f"5{c5[6]}")
     elif p1input == "6":
-        c6[c6[6]] = "X"
-        c6[6] += 1
-        xhas.append(f"6{c6[6]}")
+        if c6[6] == 6:
+            print("-------------\nThat row is full!")
+        else:
+            c6[c6[6]] = "▩"
+            c6[6] += 1
+            xhas.append(f"6{c6[6]}")
     elif p1input == "7":
-        c7[c7[6]] = "X"
-        c7[6] += 1
-        xhas.append(f"7{c7[6]}")
+        if c7[6] == 6:
+            print("-------------\nThat row is full!")
+        else:
+            c7[c7[6]] = "▩"
+            c7[6] += 1
+            xhas.append(f"7{c7[6]}")
     else:
         print("Your input was invalid.")
     printboard()
     checkwinstates()
     if win == True:
-        break
-    p2input = input("(O) Player 2: ")
+        replayreq = input("Play again? ").lower()
+        while replayreq != "no" and replayreq != "n" and replayreq != "yes" and replayreq != "y" and win==True:
+            replayreq = input("Play again? (yes or no): ").lower()
+        if replayreq == "yes" or replayreq == "y":
+            clearboard()
+            printboard()
+            win = False
+        elif replayreq == "no" or replayreq == "n":
+            print("GG")
+            break
+    p2input = input("(☀) Player 2: ")
     lastinput = "p2input"
     if p2input == "1":
-        c1[c1[6]] = "O"
-        c1[6] += 1
-        ohas.append(f"1{c1[6]}")
+        if c1[6] == 6:
+            print("-------------\nThat row is full!")
+        else:
+            c1[c1[6]] = "☀"
+            c1[6] += 1
+            ohas.append(f"1{c1[6]}")
     elif p2input == "2":
-        c2[c2[6]] = "O"
-        c2[6] += 1
-        ohas.append(f"2{c2[6]}")
+        if c2[6] == 6:
+            print("-------------\nThat row is full!")
+        else:
+            c2[c2[6]] = "☀"
+            c2[6] += 1
+            ohas.append(f"2{c2[6]}")
     elif p2input == "3":
-        c3[c3[6]] = "O"
-        c3[6] += 1
-        ohas.append(f"3{c3[6]}")
+        if c3[6] == 6:
+            print("-------------\nThat row is full!")
+        else:
+            c3[c3[6]] = "☀"
+            c3[6] += 1
+            ohas.append(f"3{c3[6]}")
     elif p2input == "4":
-        c4[c4[6]] = "O"
-        c4[6] += 1
-        ohas.append(f"4{c4[6]}")
+        if c4[6] == 6:
+            print("-------------\nThat row is full!")
+        else:
+            c4[c4[6]] = "☀"
+            c4[6] += 1
+            ohas.append(f"4{c4[6]}")
     elif p2input == "5":
-        c5[c5[6]] = "O"
-        c5[6] += 1
-        ohas.append(f"5{c5[6]}")
+        if c5[6] == 6:
+            print("-------------\nThat row is full!")
+        else:
+            c5[c5[6]] = "☀"
+            c5[6] += 1
+            ohas.append(f"5{c5[6]}")
     elif p2input == "6":
-        c6[c6[6]] = "O"
-        c6[6] += 1
-        ohas.append(f"6{c6[6]}")
+        if c6[6] == 6:
+            print("-------------\nThat row is full!")
+        else:
+            c6[c6[6]] = "☀"
+            c6[6] += 1
+            ohas.append(f"6{c6[6]}")
     elif p2input == "7":
-        c7[c7[6]] = "O"
-        c7[6] += 1
-        ohas.append(f"7{c7[6]}")
+        if c7[6] == 6:
+            print("-------------\nThat row is full!")
+        else:
+            c7[c7[6]] = "☀"
+            c7[6] += 1
+            ohas.append(f"7{c7[6]}")
     else:
         print("Your input was invalid.")
     printboard()
     checkwinstates()
-    if win == True:
-        break
