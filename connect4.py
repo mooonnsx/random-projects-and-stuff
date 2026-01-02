@@ -1,7 +1,9 @@
+# old, largely undocumented code but mostly works and fun. 
+
 #intro and instructions
 win = False
 lastinput = ""
-balls = True
+x = True
 def clearboard():
     global c1, c2, c3, c4, c5, c6, c7
     c1 = ["☐","☐","☐","☐","☐","☐", 0]
@@ -161,7 +163,7 @@ def printboard():
     print("1 2 3 4 5 6 7")
     print("-------------")
 printboard()
-while balls == True:
+while x == True:
     if win == True:
         replayreq = input("Play again? ").lower()
         while replayreq != "no" and replayreq != "n" and replayreq != "yes" and replayreq != "y" and win == True:

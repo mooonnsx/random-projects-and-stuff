@@ -1,3 +1,5 @@
+# old code, not optimized but fun to play around with. lacks documentation
+
 board = {
     "spot1": "_",
     "spot2": "_",
