@@ -3,8 +3,9 @@
 ### montecarlosimulation.py:
 <img width="312" height="50" alt="image" src="https://github.com/user-attachments/assets/1db70d73-fda9-4b42-8414-10a12563ffaa" />
 <img width="336" height="49" alt="image" src="https://github.com/user-attachments/assets/48883ff2-eeaf-4a8a-b72b-3fedae60da15" />
+...
 third party visual of monte carlo simulation: 
-<img width="1440" height="1440" alt="image" src="https://github.com/user-attachments/assets/f2f01764-d3b6-4c34-be5d-d766aca4e029" />
+<img width="300" height="300" alt="image" src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*gX7sc-S-ik3t5A-Y1bdysA.gif" />
 
 ### goldenratio.java:
 <img width="340" height="43" alt="image" src="https://github.com/user-attachments/assets/72a233bc-1548-4efd-b665-80bac0b6e38b" />
