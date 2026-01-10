@@ -6,6 +6,7 @@
 
 ...
 third party visual of monte carlo simulation: 
+
 <img src="https://mauriciocely.github.io/blog/2020/08/05/estimating-pi-using-the-monte-carlo-method/animation_canvas.gif" alt="" width="300" height="300">
 
 ### goldenratio.java:
