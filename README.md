@@ -5,7 +5,7 @@
 <img width="336" height="49" alt="image" src="https://github.com/user-attachments/assets/48883ff2-eeaf-4a8a-b72b-3fedae60da15" />
 ...
 third party visual of monte carlo simulation: 
-<img width="300" height="300" alt="image" src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*gX7sc-S-ik3t5A-Y1bdysA.gif" />
+<img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*gX7sc-S-ik3t5A-Y1bdysA.gif" alt="" width="300" height="300">
 
 ### goldenratio.java:
 <img width="340" height="43" alt="image" src="https://github.com/user-attachments/assets/72a233bc-1548-4efd-b665-80bac0b6e38b" />
