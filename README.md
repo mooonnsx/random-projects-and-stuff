@@ -2,6 +2,7 @@
 
 ### montecarlosimulation.py:
 <img width="312" height="50" alt="image" src="https://github.com/user-attachments/assets/1db70d73-fda9-4b42-8414-10a12563ffaa" />
+
 <img width="336" height="49" alt="image" src="https://github.com/user-attachments/assets/48883ff2-eeaf-4a8a-b72b-3fedae60da15" />
 
 ...
@@ -11,10 +12,12 @@ third party visual of monte carlo simulation:
 
 ### goldenratio.java:
 <img width="340" height="43" alt="image" src="https://github.com/user-attachments/assets/72a233bc-1548-4efd-b665-80bac0b6e38b" />
+
 <img width="98" height="34" alt="image" src="https://github.com/user-attachments/assets/59a6ace0-4ecf-454f-9404-620e380fdffc" />
 
 ### goldenratio.py:
 <img width="132" height="283" alt="image" src="https://github.com/user-attachments/assets/5a8715ee-8ac0-4e5f-94e1-0a14d680c258" />
+
 <img width="952" height="89" alt="image" src="https://github.com/user-attachments/assets/2bbee9e0-6ead-487b-bda9-8a00959903a9" />
 
 ### newtonsquareroot.py:
