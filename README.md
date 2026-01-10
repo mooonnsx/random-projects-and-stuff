@@ -3,6 +3,7 @@
 ### montecarlosimulation.py:
 <img width="312" height="50" alt="image" src="https://github.com/user-attachments/assets/1db70d73-fda9-4b42-8414-10a12563ffaa" />
 <img width="336" height="49" alt="image" src="https://github.com/user-attachments/assets/48883ff2-eeaf-4a8a-b72b-3fedae60da15" />
+
 ...
 third party visual of monte carlo simulation: 
 <img src="https://mauriciocely.github.io/blog/2020/08/05/estimating-pi-using-the-monte-carlo-method/animation_canvas.gif" alt="" width="300" height="300">
